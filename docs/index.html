@@ -42,20 +42,47 @@
             </section>
             <section class="statistics">
                 <script>
-                    var first = "First Quote"
-                    var second = "Second Quote"
-                    var third = "Third Quote"
-                    setTimeout(changeText, 1000);
-                    setTimeout(changeText2, 2000);
-                    function changeText(){
-                        document.getElementById('left').innerHTML = third;
+                    var left_first = "First Quote"
+                    var left_second = "Second Quote"
+                    var left_third = "Third Quote"
+                    function leftChangeStat(){
+                        if((document.getElementById('left').innerHTML) == left_first){
+                            document.getElementById('left').innerHTML = left_second;
+                        }else if((document.getElementById('left').innerHTML) == left_second){
+                            document.getElementById('left').innerHTML = left_third;
+                        }else if((document.getElementById('left').innerHTML) == left_third){
+                            document.getElementById('left').innerHTML = left_first;
+                        }
                     }
-                    function changeText
+                    var center_first = "First Quote"
+                    var center_second = "Second Quote"
+                    var center_third = "Third Quote"
+                    function centerChangeStat(){
+                        if((document.getElementById('center').innerHTML) == center_first){
+                            document.getElementById('center').innerHTML = center_second;
+                        }else if((document.getElementById('center').innerHTML) == center_second){
+                            document.getElementById('center').innerHTML = center_third;
+                        }else if((document.getElementById('center').innerHTML) == center_third){
+                            document.getElementById('center').innerHTML = center_first;
+                        }
+                    }
+                    var right_first = "First Quote"
+                    var right_second = "Second Quote"
+                    var right_third = "Third Quote"
+                    function rightChangeStat(){
+                        if((document.getElementById('right').innerHTML) == right_first){
+                            document.getElementById('right').innerHTML = right_second;
+                        }else if((document.getElementById('right').innerHTML) == right_second){
+                            document.getElementById('right').innerHTML = right_third;
+                        }else if((document.getElementById('right').innerHTML) == right_third){
+                            document.getElementById('right').innerHTML = right_first;
+                        }
+                    }
                 </script>
                 <p id="title">HOUSEHOLD EMISSIONS</p>
-                <p id="left" onclick="changeText()">First Quote</p>
-                <p id="center">Statistic 2</p>
-                <p id="right">Statistic 3</p>
+                <p id="left" onclick="leftChangeStat()">First Quote</p>
+                <p id="center" onClick="centerChangeStat()">First Quote</p>
+                <p id="right" onClick="rightChangeStat()">First Quote</p>
             </section>
             <section class="largerimage">
                 <p id=title2>THE BIGGER PICTURE</p>
