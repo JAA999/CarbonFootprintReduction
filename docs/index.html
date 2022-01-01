@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lanf="en">
     <head>
         <title>Carbon Footprint Reduction</title>
         <link href="./style.css" rel="stylesheet"/>
@@ -11,16 +11,49 @@
         <div class="container">
             <header>
                 <p id="website_title">Carbon Footprint Reduction</p>
-                <a id="Information">Infromation</a>
+                <a id="Information">Information</a>
                 <a id="Tips">Tips & Tricks</a>
                 <a id="Resources">Resources</a>
             </header>
-            <section class="slides">
-                <p></p>
+            <section id="slides-container">
+                <script>
+                    setInterval(slidesChange, 1000);
+                    var slide1 = "First";
+                    var slide2 = "Second";
+                    var slide3 = "Third";
+                    var slide4 = "Fourth";
+                    function slidesChange(){
+                        if((document.getElementById('slides-content').innerHTML) == slide1){
+                            document.getElementById('slides-content').innerHTML = slide2;
+                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
+                        }else if((document.getElementById('slides-content').innerHTML) == slide2){
+                            document.getElementById('slides-content').innerHTML = slide3;
+                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
+                        }else if((document.getElementById('slides-content').innerHTML) == slide3){
+                            document.getElementById('slides-content').innerHTML = slide4;
+                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
+                        }else if((document.getElementById('slides-content').innerHTML) == slide4){
+                            document.getElementById('slides-content').innerHTML = slide1;
+                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
+                        }
+                    }
+                </script>
+                <p id="slides-content">First</p>
             </section>
             <section class="statistics">
+                <script>
+                    var first = "First Quote"
+                    var second = "Second Quote"
+                    var third = "Third Quote"
+                    setTimeout(changeText, 1000);
+                    setTimeout(changeText2, 2000);
+                    function changeText(){
+                        document.getElementById('left').innerHTML = third;
+                    }
+                    function changeText
+                </script>
                 <p id="title">HOUSEHOLD EMISSIONS</p>
-                <p id="left">Statistic 1</p>
+                <p id="left" onclick="changeText()">First Quote</p>
                 <p id="center">Statistic 2</p>
                 <p id="right">Statistic 3</p>
             </section>
@@ -43,7 +76,7 @@
                 <section class="content">
                     <img id="life_img"/>
                     <p id="life_title">ALTER YOUR LIFESTYLE</p>
-                    <p id="life_content"></p>
+                    <p id="life_content">Don't waste water</p>
                     <p id="transport_title">TRANSPORT & ENERGY</p>
                     <img id="transport_img"/>
                     <p id="transport_content"></p>
@@ -53,7 +86,7 @@
                 </section>
             </section>
             <section class="personal">
-                <p id="title5">Title</p>
+                <p id="title5">Personal Contribution</p>
                 <section class="content2">
                     <img id="user"/>
                     <p id="user_comment">Carbon is bad for the environment and it must be reduced.</p>
@@ -69,6 +102,11 @@
                 <p id="description2">Description</p>
                 <p id="link3">Link 3</p>
                 <p id="description3">Description</p>
+            </section>
+            <section class="email">
+                <label id="email_title"for="email">Signup For More Information:</label>
+                <input type="email" id="email" placeholder="Email:" required>
+                <input id="submit" type="button" value="Submit">
             </section>
             <footer>
                 <p>Regionals Area 4 Region 3 | Joseph Arteaga, Jacqueline Higareda, Jorge Benitez</p>

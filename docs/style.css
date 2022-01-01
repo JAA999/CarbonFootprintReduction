@@ -15,17 +15,19 @@ body{
                          "tips"
                          "user"
                          "resources"
+                         "email"
                          "footer";
     gap: 80px;
     grid-template-columns: 100%;
-    grid-template-rows: 170px 300px 330px 530px 1110px 330px 680px 300px;
+    grid-template-rows: 170px 300px 330px 530px 1110px 330px 680px 150px 300px;
 }
 
-.slides,
+#slides-container,
 .statistics,
 .largerimage,
 .tips_tricks,
 .personal,
+.email,
 .resources{
     margin-left: 70px;
     margin-right: 70px;
@@ -86,10 +88,17 @@ nav{
     text-align: center;
 }
 
-.slides{
+#slides-container{
     grid-area: slides;
     background-color: #413F3D;
     border-radius: 20px;
+}
+
+#slides-content{
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+    visibility: hidden;
 }
 
 .statistics{
@@ -218,16 +227,83 @@ nav{
 
 .content{
     grid-area: content;
-    background-color: #6C847C;
     display: grid;
-    grid-template-areas: "life_img lifestyle_title"
-                         "lifestyle_content"
+    grid-template-areas: "lifestyle_img lifestyle_title"
+                         "lifestyle_content lifestyle_content"
                          "transport_title transport_img"
-                         "transport_content"
+                         "transport_content transport_content"
                          "community_img community_title"
-                         "community_content";
+                         "community_content community_content";
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 120px 200px 120px 200px 120px 200px;
+}
+
+#life_title,
+#transport_title,
+#community_title{
+    text-align: left;
+    color: white;
+    background-color: #6C847C;
+    opacity: .8;
+    padding-top: 2em;
+    padding-left: 2em;
+    border-bottom: .5em solid #4B9E83;
+}
+
+#life_content,
+#transport_content,
+#community_content{
+    background-color: #4B9E83;
+    color: white;
+    text-align: center;
+    padding-top: 4.6em;
+}
+
+#life_img,
+#transport_img,
+#community_img{
+    height: 15em;
+    z-index: 3;
+    box-shadow: 5px 10px 5px #6C847C;
+}
+
+#life_img{
+    grid-area: lifestyle_img;
+    grid-row: 1 / 3;
+}
+
+#life_title{
+    grid-area: lifestyle_title;
+}
+
+#life_content{
+    grid-area: lifestyle_content;
+}
+
+#transport_title{
+    grid-area: transport_title;
+}
+
+#transport_img{
+    grid-area: transport_img;
+    grid-row: 3 / 5;
+}
+
+#transport_content{
+    grid-area: transport_content;
+}
+
+#community_img{
+    grid-area: community_img;
+    grid-row: 5 / 7;
+}
+
+#community_title{
+    grid-area: community_title;
+}
+
+#community_content{
+    grid-area: community_content;
 }
 
 .personal{
@@ -267,10 +343,11 @@ nav{
 #user_comment{
     grid-area: user_comment;
     grid-column: 1 / 3;
-    width: 85%;
-    background-color: white;
-    margin-left: 10rem;
-    text-align: center;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: 15rem;
+    text-align: right;
+    padding-right: 10px;
     color: white;
     padding-top: 4.5em;
 }
@@ -290,7 +367,6 @@ nav{
 #title6{
     grid-area: title6;
     background-color: #4B9E83;
-    font-size: 16px;
     grid-row: 1 / 3;
     color: white;
     text-align: center;
@@ -304,6 +380,7 @@ nav{
     background-color: #6C847C;
     text-align: center;
     color: white;
+    font-size: .7em;
     padding-top: 25px;
     opacity: .7;
     margin-top: 30px;
@@ -358,6 +435,52 @@ nav{
     grid-area: description3;
     background-color: #6C847C;
     color:#413F3D;
+}
+
+.email{
+    grid-area: email;
+    background-color: #413F3D;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: grid;
+    grid-template-areas: "email_title email_title" 
+                         "email_input submit_bttn";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#email_title{
+    grid-area: email_title;
+    color: white;
+    font-style: bold;
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: .7em;
+}
+
+#email{
+    grid-area: email_input;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding-left: 10px;
+    width: 60%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit{
+    grid-area: submit_bttn;
+    background-color: #4B9E83;
+    color:white;
+    border-radius: 20px;
+    border: 3px solid #413F3D;
+    font-size: 1em;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
 }
 
 footer{
