@@ -91,6 +91,7 @@ nav{
 #slides-container{
     grid-area: slides;
     background-color: #413F3D;
+    background-size: 200px 500px;
     border-radius: 20px;
 }
 
