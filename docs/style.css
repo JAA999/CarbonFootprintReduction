@@ -41,9 +41,9 @@ header{
     grid-template-rows: 100px 70px;
 }
 
-#Information,
-#Tips,
-#Resources{
+#Information_nav,
+#Tips_nav,
+#Resources_nav{
     background-color: #4B9E83;
     color: white;
     text-align: center;
@@ -111,14 +111,14 @@ nav{
     grid-template-rows: 120px 200px;
 }
 
-#title{
+#household_title{
     grid-area: title;
 }
 
-#title,
-#title2,
-#title3,
-#title5{
+#household_title,
+#overview_title,
+#tips_title,
+#user_title{
     opacity: .7;
     width: 65%;
     padding-top: 13px;
@@ -130,9 +130,9 @@ nav{
     text-align: left;
 }
 
-#left,
-#center,
-#right{
+#transport_subtitle,
+#food_subtitle,
+#energy_subtitle{
     background-color: #4B9E83;
     padding: 20px 10px 20px 10px;
     display: flex;
@@ -146,15 +146,15 @@ nav{
     text-align: center;
 }
 
-#left{
+#transport_subtitle{
     grid-area: left;
 }
 
-#center{
+#food_subtitle{
     grid-area: center;
 }
 
-#right{
+#energy_subtitle{
     grid-area: right;
 }
 
@@ -180,7 +180,7 @@ nav{
     font-size: 1.2em;
 }
 
-#title2{
+#overview_title{
     grid-area: title2;
 }
 
@@ -226,7 +226,7 @@ nav{
     grid-template-rows: 120px 985px;
 }
 
-#title3{
+#tips_title{
     grid-area: title3;
 }
 
@@ -321,7 +321,7 @@ nav{
     grid-template-rows: 120px 200px;
 }
 
-#title5{
+#user_title{
     grid-area: title5;
 }
 

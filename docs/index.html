@@ -11,9 +11,9 @@
         <div class="container">
             <header>
                 <p id="website_title">Carbon Footprint Reduction</p>
-                <a id="Information">Information</a>
-                <a id="Tips">Tips & Tricks</a>
-                <a id="Resources">Resources</a>
+                <a id="Information_nav">Information</a>
+                <a id="Tips_nav">Tips & Tricks</a>
+                <a id="Resources_nav">Resources</a>
             </header>
             <section id="slides-container">
                 <script>
@@ -42,56 +42,56 @@
             </section>
             <section class="statistics">
                 <script>
-                    var left_first = "According to the University of Michigan, gasoline releases approximately 19.6 pounds of CO2 per gallon."
-                    var left_second = "At an average price of $3.26/gal, the average American spends anywhere from $1.4K to $3K on gasoline per year."
-                    var left_third = "Averaging 0.74lbs of carbon dioxide per mile driven, driving can greatly contribute to your carbon footprint."
-                    function leftChangeStat(){
-                        if((document.getElementById('left').innerHTML) == "Transportation and Gas Emissions"){
-                            document.getElementById('left').innerHTML = left_first;
-                        }else if((document.getElementById('left').innerHTML) == left_first){
-                            document.getElementById('left').innerHTML = left_second;
-                        }else if((document.getElementById('left').innerHTML) == left_second){
-                            document.getElementById('left').innerHTML = left_third;
-                        }else if((document.getElementById('left').innerHTML) == left_third){
-                            document.getElementById('left').innerHTML = "Transportation and Gas Emissions";
+                    var transport_first = "According to the University of Michigan, gasoline releases approximately 19.6 pounds of CO2 per gallon."
+                    var transport_second = "At an average price of $3.26/gal, the average American spends anywhere from $1.4K to $3K on gasoline per year."
+                    var transport_third = "Averaging 0.74lbs of carbon dioxide per mile driven, driving can greatly contribute to your carbon footprint."
+                    function transportChangeStat(){
+                        if((document.getElementById('transport_subtitle').innerHTML) == "Transportation and Gas Emissions"){
+                            document.getElementById('transport_subtitle').innerHTML = transport_first;
+                        }else if((document.getElementById('transport_subtitle').innerHTML) == transport_first){
+                            document.getElementById('transport_subtitle').innerHTML = transport_second;
+                        }else if((document.getElementById('transport_subtitle').innerHTML) == transport_second){
+                            document.getElementById('transport_subtitle').innerHTML = transport_third;
+                        }else if((document.getElementById('transport_subtitle').innerHTML) == transport_third){
+                            document.getElementById('transport_subtitle').innerHTML = "Transportation and Gas Emissions";
                         }
                     }
-                    var center_first = "Anywhere from 10-30% of a household’s carbon footprint comes from the food we eat."
-                    var center_second = "Meats make up approximately 57% of greenhouse gas emissions by food type."
-                    var center_third = "Fruits, grains, and vegetables contribute to 6.3% of our food emissions combined."
-                    function centerChangeStat(){
-                        if((document.getElementById('center').innerHTML) == "Food Emissions"){
-                            document.getElementById('center').innerHTML = center_first;
-                        }else if((document.getElementById('center').innerHTML) == center_first){
-                            document.getElementById('center').innerHTML = center_second;
-                        }else if((document.getElementById('center').innerHTML) == center_second){
-                            document.getElementById('center').innerHTML = center_third;
-                        }else if((document.getElementById('center').innerHTML) == center_third){
-                            document.getElementById('center').innerHTML = "Food Emissions";
+                    var food_first = "Anywhere from 10-30% of a household’s carbon footprint comes from the food we eat."
+                    var food_second = "Meats make up approximately 57% of greenhouse gas emissions by food type."
+                    var food_third = "Fruits, grains, and vegetables contribute to 6.3% of our food emissions combined."
+                    function foodChangeStat(){
+                        if((document.getElementById('food_subtitle').innerHTML) == "Food Emissions"){
+                            document.getElementById('food_subtitle').innerHTML = food_first;
+                        }else if((document.getElementById('food_subtitle').innerHTML) == food_first){
+                            document.getElementById('food_subtitle').innerHTML = food_second;
+                        }else if((document.getElementById('food_subtitle').innerHTML) == food_second){
+                            document.getElementById('food_subtitle').innerHTML = food_third;
+                        }else if((document.getElementById('food_subtitle').innerHTML) == food_third){
+                            document.getElementById('food_subtitle').innerHTML = "Food Emissions";
                         }
                     }
-                    var right_first = "Large appliances like refrigerators emit an annual average of 672lbs of carbon dioxide."
-                    var right_second = "Power plants release an average of .889lbs of carbon dioxide per kWh."
-                    var right_third = "Other means of energy production release no carbon dioxide and less CO2 during production than power plants."
-                    function rightChangeStat(){
-                        if((document.getElementById('right').innerHTML) == "Energy"){
-                            document.getElementById('right').innerHTML = right_first
-                        }else if((document.getElementById('right').innerHTML) == right_first){
-                            document.getElementById('right').innerHTML = right_second;
-                        }else if((document.getElementById('right').innerHTML) == right_second){
-                            document.getElementById('right').innerHTML = right_third;
-                        }else if((document.getElementById('right').innerHTML) == right_third){
-                            document.getElementById('right').innerHTML = "Energy";
+                    var energy_first = "Large appliances like refrigerators emit an annual average of 672lbs of carbon dioxide."
+                    var energy_second = "Power plants release an average of .889lbs of carbon dioxide per kWh."
+                    var energy_third = "Other means of energy production release no carbon dioxide and less CO2 during production than power plants."
+                    function energyChangeStat(){
+                        if((document.getElementById('energy_subtitle').innerHTML) == "Energy"){
+                            document.getElementById('energy_subtitle').innerHTML = energy_first
+                        }else if((document.getElementById('energy_subtitle').innerHTML) == energy_first){
+                            document.getElementById('energy_subtitle').innerHTML = energy_second;
+                        }else if((document.getElementById('energy_subtitle').innerHTML) == energy_second){
+                            document.getElementById('energy_subtitle').innerHTML = energy_third;
+                        }else if((document.getElementById('energy_subtitle').innerHTML) == energy_third){
+                            document.getElementById('energy_subtitle').innerHTML = "Energy";
                         }
                     }
                 </script>
-                <p id="title">HOUSEHOLD EMISSIONS</p>
-                <p id="left" onclick="leftChangeStat()">Transportation and Gas Emissions</p>
-                <p id="center" onClick="centerChangeStat()">Food Emissions</p>
-                <p id="right" onClick="rightChangeStat()">Energy</p>
+                <p id="household_title">HOUSEHOLD EMISSIONS</p>
+                <p id="transport_subtitle" onclick="transportChangeStat()">Transportation and Gas Emissions</p>
+                <p id="food_subtitle" onClick="foodChangeStat()">Food Emissions</p>
+                <p id="energy_subtitle" onClick="energyChangeStat()">Energy</p>
             </section>
             <section class="largerimage">
-                <p id=title2>THE BIGGER PICTURE</p>
+                <p id=overview_title>THE BIGGER PICTURE</p>
                 <img id="left2"/>
                 <p id="right2">Info on Doc</p>
                 <p id="left3">Info on Doc</p>
@@ -105,7 +105,7 @@
                 </ul>
             </section>
             <section class="tips_tricks">
-                <p id="title3">HOW CAN WE DO OUR PART?</p>
+                <p id="tips_title">HOW CAN WE DO OUR PART?</p>
                 <section class="content">
                     <img id="life_img"/>
                     <p id="life_title">ALTER YOUR LIFESTYLE</p>
@@ -119,7 +119,7 @@
                 </section>
             </section>
             <section class="personal">
-                <p id="title5">Personal Contribution</p>
+                <p id="user_title">Personal Contribution</p>
                 <section class="content2">
                     <img id="user" src="hines.jpg" alt="Florida Man" style="width:200px; height:200px"/>
                     <p id="user_comment">Recycle, Carpool, Take the bus (hard to do out there), renewable batteries. I think the best way to get your tips and tricks to be the most effective is picking stuff that is mostly viable (money and time wise) and easy to do. I think that is the biggest hurdle for going "more green."</p>
