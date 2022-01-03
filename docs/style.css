@@ -15,11 +15,10 @@ body{
                          "tips"
                          "user"
                          "resources"
-                         "email"
                          "footer";
     gap: 80px;
     grid-template-columns: 100%;
-    grid-template-rows: 170px 300px 330px 530px 1110px 330px 680px 150px 300px;
+    grid-template-rows: 170px 300px 330px 530px 1110px 330px 680px 300px;
 }
 
 #slides-container,
@@ -449,52 +448,6 @@ nav{
     grid-area: description3;
     background-color: #6C847C;
     color:#413F3D;
-}
-
-.email{
-    grid-area: email;
-    background-color: #413F3D;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    display: grid;
-    grid-template-areas: "email_title email_title" 
-                         "email_input submit_bttn";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-#email_title{
-    grid-area: email_title;
-    color: white;
-    font-style: bold;
-    font-size: 1.7em;
-    text-align: center;
-    padding-top: .7em;
-}
-
-#email{
-    grid-area: email_input;
-    border-radius: 20px;
-    font-size: 1.5em;
-    padding-left: 10px;
-    width: 60%;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#submit{
-    grid-area: submit_bttn;
-    background-color: #4B9E83;
-    color:white;
-    border-radius: 20px;
-    border: 3px solid #413F3D;
-    font-size: 1em;
-    margin-right: auto;
-    width: 100px;
-    height: 50px;
 }
 
 footer{
