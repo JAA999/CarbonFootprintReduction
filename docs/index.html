@@ -25,10 +25,12 @@
                     function slidesChange(){
                         if((document.getElementById('slides-content').innerHTML) == slide1){
                             document.getElementById('slides-content').innerHTML = slide2;
-                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
+                            document.getElementById('slides-container').style.background = "url(clouds.jpg)";
+                            document.getElementById('slides-container').style.backgroundSize = "contain"
                         }else if((document.getElementById('slides-content').innerHTML) == slide2){
                             document.getElementById('slides-content').innerHTML = slide3;
-                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
+                            document.getElementById('slides-container').style.background = "url(city.jpg)";
+                            document.getElementById('slides-container').style.backgroundSize = "contain";
                         }else if((document.getElementById('slides-content').innerHTML) == slide3){
                             document.getElementById('slides-content').innerHTML = slide4;
                             document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";

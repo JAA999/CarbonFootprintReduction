@@ -20,7 +20,7 @@ body{
                          "footer";
     gap: 80px;
     grid-template-columns: 100%;
-    grid-template-rows: 170px 300px 330px 530px 1110px 330px 680px 300px;
+    grid-template-rows: 170px 470px 330px 530px 1110px 330px 680px 300px;
 }
 
 #slides-container,
@@ -96,7 +96,6 @@ nav{
 #slides-container{
     grid-area: slides;
     background-color: #413F3D;
-    background-size: 200px 500px;
     border-radius: 20px;
 }
 
