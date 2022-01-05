@@ -355,14 +355,14 @@ nav{
 
 #user{
     grid-area: user;
-    border: 5px solid #4B9E83;
+    border: 5px solid #6C847C;
     border-radius: 360px;
     z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 50px;
-    box-shadow: 5px 5px 5px #6C847C;
+    box-shadow: 5px 5px 5px black;
 }
 
 #user_comment{
