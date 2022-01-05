@@ -31,30 +31,26 @@
             </header>
             <section id="slides-container">
                 <script>
-                    setInterval(slidesChange, 7000);
+                    setInterval(slidesChange, 3000);
                     var slide1 = "First";
                     var slide2 = "Second";
                     var slide3 = "Third";
-                    var slide4 = "Fourth";
                     function slidesChange(){
                         if((document.getElementById('slides-content').innerHTML) == slide1){
                             document.getElementById('slides-content').innerHTML = slide2;
-                            document.getElementById('slides-container').style.background = "url(clouds.jpg)";
+                            document.getElementById('slides-container').style.background = "url(blue_clouds.jpg)";
                             document.getElementById('slides-container').style.backgroundSize = "contain"
                         }else if((document.getElementById('slides-content').innerHTML) == slide2){
                             document.getElementById('slides-content').innerHTML = slide3;
-                            document.getElementById('slides-container').style.background = "url(city.jpg)";
+                            document.getElementById('slides-container').style.background = "url(elpaso_city.jpg)";
                             document.getElementById('slides-container').style.backgroundSize = "contain";
                         }else if((document.getElementById('slides-content').innerHTML) == slide3){
-                            document.getElementById('slides-content').innerHTML = slide4;
-                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
-                        }else if((document.getElementById('slides-content').innerHTML) == slide4){
                             document.getElementById('slides-content').innerHTML = slide1;
-                            document.getElementById('slides-container').style.background = "#413F3D url() repeat-x top";
+                            document.getElementById('slides-container').style.background = "#413F3D url(plants.jpg) repeat-x top";
                         }
                     }
                 </script>
-                <p id="slides-content">First</p>
+                <p id="slides-content">Second</p>
             </section>
             <section class="statistics">
                 <script>
@@ -108,17 +104,12 @@
             </section>
             <section class="largerimage">
                 <p id=overview_title>THE BIGGER PICTURE</p>
-                <img id="left2"/>
+                <img id="left2" src="icebergs.jpg"/>
                 <p id="right2">Our disregard for our carbon footprint and carelessness in the ways we contribute to greenhouse gas emissions every year has inevitably led to global warming and climate change. Global warming has had a massive impact on every aspect of life, from plants and animals to our own community.</p>
-                <p id="left3">Info on Doc</p>
+                <p id="left3">While there have been numerous attempts to alert the public of the dangers of excessive carbon levels, they have chosen to feign ignorance and continue on with their daily lives despite the consequences.</p>
                 <img id="right3"/>
                 <img id="img"/>
-                <ul id="points">
-                    <li>Point 1</li>
-                    <li>Point 2</li>
-                    <li>Point 3</li>
-                    <li>Point 4</li>
-                </ul>
+                <p id="right4">However, there have been those that have aimed to diminish our carbon footprint at a grander scale with companies such as Tesla and organizations such as the Environmental Defense Fund (EDF). But for those wishing to aid in this mission, here are some tips and tricks to follow to help save our planet Earth.</p>
             </section>
             <section class="tips_tricks">
                 <p id="tips_title">HOW CAN WE DO OUR PART?</p>

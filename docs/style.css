@@ -148,10 +148,10 @@ nav{
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    box-shadow: 10px 10px 5px #6C847C;
-    height: 150px;
+    box-shadow: 2px 2px 5px #6C847C;
+    height: 200px;
     width: 100%;
-    color: #413F3D;
+    color: white;
     text-align: center;
 }
 
@@ -182,7 +182,8 @@ nav{
 }
 
 #left3,
-#right2{
+#right2,
+#right4{
     background-color: #4B9E83;
     color:white;
     text-align: center;
@@ -218,14 +219,6 @@ nav{
     border-bottom: 5px solid #D8CFD0;
 }
 
-#points{
-    grid-area: points;
-    background-color: #4B9E83;
-    text-align: left;
-    font-size: 1.2em;
-    color: white;
-    padding-top: 20px;
-}
 
 /* Formatting for the Tips & Tricks section */
 
