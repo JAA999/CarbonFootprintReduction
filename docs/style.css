@@ -20,7 +20,7 @@ body{
                          "footer";
     gap: 80px;
     grid-template-columns: 100%;
-    grid-template-rows: 170px 470px 330px 530px 1110px 330px 680px 300px;
+    grid-template-rows: 170px 470px 330px 530px 1410px 330px 680px 300px;
 }
 
 #slides-container,
@@ -184,7 +184,6 @@ nav{
 #right2{
     background-color: #4B9E83;
     color:white;
-    opacity: .7;
     text-align: center;
     padding-top: 35px;
     font-size: 1.2em;
@@ -219,7 +218,6 @@ nav{
 #points{
     grid-area: points;
     background-color: #4B9E83;
-    opacity: .7;
     text-align: left;
     font-size: 1.2em;
     color: white;
@@ -235,7 +233,7 @@ nav{
                          "content";
     gap: 5px;
     grid-template-columns: 100%;
-    grid-template-rows: 120px 985px;
+    grid-template-rows: 120px 1285px;
 }
 
 #tips_title{
@@ -252,7 +250,7 @@ nav{
                          "community_img community_title"
                          "community_content community_content";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 120px 200px 120px 200px 120px 200px;
+    grid-template-rows: 120px 300px 120px 300px 120px 300px;
 }
 
 #life_title,
@@ -273,8 +271,11 @@ nav{
 #community_content{
     background-color: #4B9E83;
     color: white;
-    text-align: center;
-    padding-top: 4.6em;
+    text-align: right;
+    font-size: 1.5em;
+    padding-top: 70px;
+    padding-right: 50px;
+    list-style-position: inside;
 }
 
 #life_img,
@@ -304,11 +305,11 @@ nav{
 
 #transport_img{
     grid-area: transport_img;
-    grid-row: 3 / 5;
 }
 
 #transport_content{
     grid-area: transport_content;
+    text-align: left;
 }
 
 #community_img{
