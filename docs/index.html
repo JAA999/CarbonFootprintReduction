@@ -10,10 +10,24 @@
     <body>
         <div class="container">
             <header>
+                <script>
+                    function scrollInfo(){
+                        var info = document.getElementById("household_title");
+                        info.scrollIntoView();
+                    }
+                    function scrollTips(){
+                        var tips = document.getElementById("tips_title");
+                        tips.scrollIntoView();
+                    }
+                    function scrollResources(){
+                        var resources = document.getElementById("resources_title");
+                        resources.scrollIntoView();
+                    }
+                </script>
                 <p id="website_title">Carbon Footprint Reduction</p>
-                <a id="Information_nav">Information</a>
-                <a id="Tips_nav">Tips & Tricks</a>
-                <a id="Resources_nav">Resources</a>
+                <button id="Information_nav" onclick="scrollInfo()">Information</button>
+                <button id="Tips_nav" onclick="scrollTips()">Tips & Tricks</button>
+                <button id="Resources_nav" onclick="scrollResources()">Resources</button>
             </header>
             <section id="slides-container">
                 <script>
@@ -143,7 +157,7 @@
                 </section>
             </section>
             <section class="resources">
-                <p id="title6">Resources</p>
+                <p id="resources_title">Resources</p>
                 <p id="subtitle">We've linked a few additional resources for your convenience.</p>
                 <img id="t_img"/>
                 <p id="link1">https://www3.epa.gov/carbon-footprint-calculator/</p>
