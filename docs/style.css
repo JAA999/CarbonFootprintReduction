@@ -20,7 +20,7 @@ body{
                          "footer";
     gap: 80px;
     grid-template-columns: 100%;
-    grid-template-rows: 170px 470px 330px 530px 1410px 330px 680px 300px;
+    grid-template-rows: 170px 470px 330px 1130px 1410px 330px 680px 300px;
 }
 
 #slides-container,
@@ -178,7 +178,7 @@ nav{
                          "img points";
     gap: 5px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 120px 120px 170px;
+    grid-template-rows: 120px 320px 320px 320px;
 }
 
 #left3,
@@ -186,7 +186,9 @@ nav{
     background-color: #4B9E83;
     color:white;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 1.2em;
 }
 
