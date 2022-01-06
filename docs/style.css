@@ -23,7 +23,7 @@ body{
     grid-template-rows: 170px 470px 330px 1130px 1410px 330px 680px 300px;
 }
 
-#slides-container,
+#slides_container,
 .statistics,
 .largerimage,
 .tips_tricks,
@@ -55,7 +55,7 @@ header{
     grid-area: header;
     display: grid;
     grid-template-areas: "website_title website_title website_title"
-                         "info tips resources";
+                         "info_nav tips_nav resources_nav";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 70px;
 }
@@ -80,13 +80,13 @@ header{
 }
 
 #Information_nav{
-    grid-area: info;
+    grid-area: info_nav;
 }
 #Tips_nav{
-    grid-area: tips;
+    grid-area: tips_nav;
 }
 #Resources_nav{
-    grid-area: resources;
+    grid-area: resources_nav;
 }
 
 #website_title{
@@ -102,13 +102,13 @@ header{
 
 /* Formatting for the slides section */
 
-#slides-container{
+#slides_container{
     grid-area: slides;
     background-color: #413F3D;
     border-radius: 20px;
 }
 
-#slides-content{
+#slides_content{
     visibility: hidden;
 }
 
@@ -118,15 +118,15 @@ header{
     grid-area: stats;
     display: grid;
     text-decoration: none;
-    grid-template-areas: "title title title"
-                         "left center right";
+    grid-template-areas: "household_title household_title household_title"
+                         "left_card center_card right_card";
     gap: 5px 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px 200px;
 }
 
 #household_title{
-    grid-area: title;
+    grid-area: household_title;
 }
 
 #transport_subtitle,
@@ -146,15 +146,15 @@ header{
 }
 
 #transport_subtitle{
-    grid-area: left;
+    grid-area: left_card;
 }
 
 #food_subtitle{
-    grid-area: center;
+    grid-area: center_card;
 }
 
 #energy_subtitle{
-    grid-area: right;
+    grid-area: right_card;
 }
 
 /* Formatting for the overview section */
@@ -318,18 +318,18 @@ header{
 .personal{
     grid-area: user;
     display: grid;
-    grid-template-areas: "title5"
-                         "content2";
+    grid-template-areas: "user_title"
+                         "user_content";
     grid-template-columns: 100%;
     grid-template-rows: 120px 200px;
 }
 
 #user_title{
-    grid-area: title5;
+    grid-area: user_title;
 }
 
-.content2{
-    grid-area: content2;
+.user_content{
+    grid-area: user_content;
     background-color: #4B9E83;
     height: 200px;
     display: grid;
@@ -367,7 +367,7 @@ header{
 .resources{
     grid-area: resources;
     display: grid;
-    grid-template-areas: "title6 subtitle"
+    grid-template-areas: "resources_title resources_subtitle"
                          "t_image t_img"
                          "link1 description1"
                          "link2 description2"
@@ -377,7 +377,7 @@ header{
 }
 
 #resources_title{
-    grid-area: title6;
+    grid-area: resources_title;
     background-color: #4B9E83;
     grid-row: 1 / 3;
     color: white;
@@ -387,8 +387,8 @@ header{
     margin-bottom: 30px;
 }
 
-#subtitle{
-    grid-area: subtitle;
+#resources_subtitle{
+    grid-area: resources_subtitle;
     background-color: #6C847C;
     text-align: center;
     color: white;
