@@ -34,6 +34,21 @@ body{
     margin-right: 70px;
 }
 
+#household_title,
+#overview_title,
+#tips_title,
+#user_title{
+    opacity: .7;
+    width: 65%;
+    padding-top: 13px;
+    font-size: 30px;
+    padding-left: 10px;
+    background-color: #4B9E83;
+    border-left: 7px solid #6C847C;
+    color: white;
+    text-align: left;
+}
+
 /* Formatting for the header and navigation sections */
 
 header{
@@ -64,13 +79,13 @@ header{
     color: #413F3D;
 }
 
-#Information{
+#Information_nav{
     grid-area: info;
 }
-#Tips{
+#Tips_nav{
     grid-area: tips;
 }
-#Resources{
+#Resources_nav{
     grid-area: resources;
 }
 
@@ -85,13 +100,6 @@ header{
     height: 100px;
 }
 
-nav{
-    grid-area: nav;
-    background-color: #4B9E83;
-    color: white;
-    text-align: center;
-}
-
 /* Formatting for the slides section */
 
 #slides-container{
@@ -101,9 +109,6 @@ nav{
 }
 
 #slides-content{
-    color: white;
-    text-align: center;
-    padding-top: 120px;
     visibility: hidden;
 }
 
@@ -122,21 +127,6 @@ nav{
 
 #household_title{
     grid-area: title;
-}
-
-#household_title,
-#overview_title,
-#tips_title,
-#user_title{
-    opacity: .7;
-    width: 65%;
-    padding-top: 13px;
-    font-size: 30px;
-    padding-left: 10px;
-    background-color: #4B9E83;
-    border-left: 7px solid #6C847C;
-    color: white;
-    text-align: left;
 }
 
 #transport_subtitle,
@@ -172,18 +162,18 @@ nav{
 .largerimage{
     grid-area: overview;
     display: grid;
-    grid-template-areas: "title2 title2"
-                         "left2 right2"
-                         "left3 right3"
-                         "img points";
+    grid-template-areas: "overview_title overview_title"
+                         "icebergs_img overview_intro"
+                         "overview_middle dying_rose_img"
+                         "electric_car_img conclusion";
     gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 120px 320px 320px 320px;
 }
 
-#left3,
-#right2,
-#right4{
+#overview_middle,
+#overview_intro,
+#overview_conclusion{
     background-color: #4B9E83;
     color:white;
     text-align: center;
@@ -194,29 +184,31 @@ nav{
 }
 
 #overview_title{
-    grid-area: title2;
+    grid-area: overview_title;
 }
 
-#left2{
-    grid-area: left2;
+#icebergs_img{
+    grid-area: icebergs_img;
 }
 
-#right2{
-    grid-area: right2;
+#overview_intro{
+    grid-area: overview_intro;
 }
 
-#left3{
-    grid-area: left3;
+#overview_middle{
+    grid-area: overview_middle;
 }
 
-#right3{
-    grid-area: right3;
+#dying_rose_img{
+    grid-area: dying_rose_img;
 }
 
-#img{
-    grid-area: img;
-    border-left: 5px solid #D8CFD0;
-    border-bottom: 5px solid #D8CFD0;
+#electric_car_img{
+    grid-area: electric_car_img;
+}
+
+#overview_conclusion{
+    grid-area: conclusion;
 }
 
 
