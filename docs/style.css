@@ -43,6 +43,7 @@ body{
     padding-top: 13px;
     font-size: 30px;
     padding-left: 10px;
+    font-weight: bold;
     background-color: #4B9E83;
     border-left: 7px solid #6C847C;
     color: white;
@@ -282,7 +283,7 @@ header{
 #community_img{
     height: 15em;
     z-index: 3;
-    box-shadow: 5px 5px 5px #6C847C;
+    box-shadow: 5px 5px 5px black;
 }
 
 #life_img{
