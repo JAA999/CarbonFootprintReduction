@@ -313,6 +313,7 @@ header{
 #transport_content{
     grid-area: transport_content;
     text-align: left;
+    padding-left: 20px;
 }
 
 #community_img{
