@@ -18,9 +18,9 @@ body{
                          "user"
                          "resources"
                          "footer";
-    gap: 80px;
+    gap: 50px;
     grid-template-columns: 100%;
-    grid-template-rows: 170px 470px 330px 1130px 1410px 330px 680px 300px;
+    grid-template-rows: 170px 540px 330px 1130px 1410px 430px 980px 300px;
 }
 
 #slides_container,
@@ -30,8 +30,7 @@ body{
 .personal,
 .email,
 .resources{
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 0px 70px 0px 70px;
 }
 
 #household_title,
@@ -40,9 +39,8 @@ body{
 #user_title{
     opacity: .7;
     width: 65%;
-    padding-top: 13px;
+    padding: 13px 0px 0px 10px;
     font-size: 30px;
-    padding-left: 10px;
     font-weight: bold;
     background-color: #4B9E83;
     border-left: 7px solid #6C847C;
@@ -105,8 +103,7 @@ header{
 #website_logo{
     grid-area: website_logo;
     z-index: 10;
-    margin-left: 10px;
-    margin-top: 5px;
+    margin: 5px 0px 0px 10px; 
     height: 50%;
     grid-row: 1/2;
 }
@@ -117,6 +114,7 @@ header{
     grid-area: slides;
     background-color: #413F3D;
     border-radius: 20px;
+    margin-top: 70px;
 }
 
 #slides_content{
@@ -173,6 +171,7 @@ header{
 .largerimage{
     grid-area: overview;
     display: grid;
+    margin-top: 50px;
     grid-template-areas: "overview_title overview_title"
                          "icebergs_img overview_intro"
                          "overview_middle dying_rose_img"
@@ -188,9 +187,10 @@ header{
     background-color: #4B9E83;
     color:white;
     text-align: center;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
     font-size: 1.2em;
 }
 
@@ -229,7 +229,7 @@ header{
 .tips_tricks{
     grid-area: tips;
     display: grid;
-    grid-template-areas: "title3"
+    grid-template-areas: "tips_title"
                          "content";
     gap: 5px;
     grid-template-columns: 100%;
@@ -237,7 +237,7 @@ header{
 }
 
 #tips_title{
-    grid-area: title3;
+    grid-area: tips_title;
 }
 
 .content{
@@ -261,8 +261,7 @@ header{
     background-color: #6C847C;
     opacity: .8;
     font-size: 25px;
-    padding-top: 13px;
-    padding-left: 2em;
+    padding: 13px 0px 0px 2em;
     border-bottom: .5em solid #4B9E83;
 }
 
@@ -273,8 +272,7 @@ header{
     color: white;
     text-align: right;
     font-size: 1.5em;
-    padding-top: 70px;
-    padding-right: 50px;
+    padding: 70px 50px 0px 0px;
     list-style-position: inside;
 }
 
@@ -298,6 +296,8 @@ header{
 
 #life_content{
     grid-area: lifestyle_content;
+    padding-left: 430px;
+    text-align: left;
 }
 
 #transport_title{
@@ -327,6 +327,8 @@ header{
 
 #community_content{
     grid-area: community_content;
+    text-align: left;
+    padding-left: 430px;
 }
 
 /* Formatting for the user section */
@@ -337,7 +339,7 @@ header{
     grid-template-areas: "user_title"
                          "user_content";
     grid-template-columns: 100%;
-    grid-template-rows: 120px 200px;
+    grid-template-rows: 120px 300px;
 }
 
 #user_title{
@@ -347,7 +349,7 @@ header{
 .user_content{
     grid-area: user_content;
     background-color: #4B9E83;
-    height: 200px;
+    height: 300px;
     display: grid;
     grid-template-areas: "user user_comment";
     grid-template-columns: 1fr 1fr;
@@ -362,8 +364,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 50px;
+    margin: 50px 0px 0px 50px;
     box-shadow: 5px 5px 5px black;
 }
 
@@ -373,7 +374,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 85%;
-    font-size: 20px;
+    font-size: 1.5em;
     text-align: right;
     padding-right: 10px;
     color: white;
@@ -388,9 +389,10 @@ header{
                          "t_img t_img"
                          "link1 description1"
                          "link2 description2"
-                         "link3 description3";
+                         "link3 description3"
+                         "link4 description4";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 120px 100px 1fr 1fr 1fr;
+    grid-template-rows: 120px 100px 1fr 1fr 1fr 2fr;
 }
 
 #resources_title{
@@ -427,17 +429,17 @@ header{
 #link1,
 #link2,
 #link3,
+#link4,
 #description1,
 #description2,
 #description3{
     display: flex;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-right: 10px;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     text-align: center;
-    padding-left: 20px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -475,6 +477,25 @@ header{
     grid-area: description3;
     background-color: #6C847C;
     color:#413F3D;
+}
+
+#link4{
+    grid-area: link4;
+    background-color: #4B9E83;
+    color: #413F3D;
+    margin-top: 30px;
+}
+
+#description4{
+    grid-area: description4;
+    color: #413F3D;
+    background-color: #4B9E83;
+    font-size: 15px;
+    padding: 10px 30px 10px 50px;
+    text-align: center;
+    list-style-position: inside;
+    line-height: 1.6;
+    margin: 30px 0px 0px 0px;
 }
 
 /* Formatting for footer section */
