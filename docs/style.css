@@ -520,4 +520,8 @@ footer{
     .resources{
         margin: 0 auto;
     }
+
+    body{
+        max-width: 480px;
+    }
 }
