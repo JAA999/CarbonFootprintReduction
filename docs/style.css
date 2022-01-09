@@ -509,19 +509,3 @@ footer{
     text-align: center;
     padding-top: 40px;
 }
-
-@media screen and (max-width: 480px) {
-    #slides_container,
-    .statistics,
-    .largerimage,
-    .tips_tricks,
-    .personal,
-    .email,
-    .resources{
-        margin: 0 auto;
-    }
-
-    body{
-        max-width: 480px;
-    }
-}
